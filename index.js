@@ -80,11 +80,11 @@ function displayInfo(array){
     
         if(type === "movie"){
             type_card.textContent="Movie";
-            type_card.classList.add("bg-success");
+            type_card.classList.add("badge","badge-success");
         }
         else{
             type_card.textContent="Series";
-            type_card.classList.add("bg-warning");
+            type_card.classList.add("badge","badge-warning");
         }
     
         title_div.append(type_card);
@@ -92,7 +92,7 @@ function displayInfo(array){
         //Year Cards
     
         var year_card=document.createElement("small");
-        year_card.classList.add("p-1","text-white","bg-danger");
+        year_card.classList.add("p-1","text-white","badge","badge-danger");
         year_card.textContent=obj["Year"];
     
         title_div.append(year_card);
@@ -120,7 +120,7 @@ function displayInfo(array){
 function openInfoPage(event){
     var imdb_id=event.parentNode.parentNode.firstChild.childNodes[0];
     addIdtoLocalStorage(imdb_id.textContent);
-    //window.location.assign("");    
+    window.location.assign("info.html");    
 }
 
 function addIdtoLocalStorage(id){
