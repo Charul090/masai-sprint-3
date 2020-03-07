@@ -9,3 +9,36 @@ font-family: 'Spartan', sans-serif;;
 #movie-results{
     font-family: 'Permanent Marker', cursive;
 }
+
+.flex-nav{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-img{
+    width:60px;
+}
+
+.logo-img img{
+    max-width: 100%;
+}
+
+.site-title{
+    align-self: flex-end;
+}
+
+.site-title p{
+    margin:0;
+}
+
+header{
+    padding:10px 0;
+    background-color: #9575CD;
+    border-bottom: 2px solid #4527A0;
+    font-family: 'Oswald', sans-serif;;
+}
+
+.big-logo-text{
+    font-size: 51px;
+    color:white;
+}
