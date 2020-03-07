@@ -42,3 +42,11 @@ header{
     font-size: 51px;
     color:white;
 }
+
+#title-name{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#credits{
+    font-family: 'Open Sans', sans-serif;
+}

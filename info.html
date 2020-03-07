@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link type="text/css" rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Spartan&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald|Open+Sans&display=swap" rel="stylesheet">
     </head>
     <body>
         <header class="flex-nav">
@@ -29,32 +29,48 @@
                                 <img alt="poster" class="img-fluid img-thumbnail" id="poster">
                             </div>
                         </div>
-                        <div class="row px-1">
-                            <div class="col-12">
-                                <span class="h6" id="genre"></span>
+                        <div class="row px-1 list-group">
+                            <div class="col-10">
+                                <span class="h6 list-group-item" id="genre"></span>
                             </div>
-                            <div class="col-12">
-                                <span class="h6" id="release"></span>
+                            <div class="col-10">
+                                <span class="h6 list-group-item" id="release"></span>
                             </div>
-                            <div class="col-12">
-                                <span class="h6" id="rated"></span>
+                            <div class="col-10">
+                                <span class="h6 list-group-item" id="rated"></span>
                             </div>
-                            <div class="col-12">
-                                <span class="h6" id="runtime"></span>
+                            <div class="col-10">
+                                <span class="h6 list-group-item" id="runtime"></span>
                             </div>
-                            <div class="col-12">
-                                <span class="h6" id="imdb"></span>
+                            <div class="col-10">
+                                <span class="h6 list-group-item" id="imdb"></span>
                             </div>
-                            <div class="col-12">
-                                <span class="h6" id="box-office"></span>
+                            <div class="col-10">
+                                <span class="h6 list-group-item" id="box-office"></span>
                             </div>
-                            <div class="col-12">
-                                <span class="h6" id="season"></span>
+                            <div class="col-10 d-none">
+                                <span class="h6 list-group-item" id="season"></span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-7"></div>
+                <div class="col-7">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <h1 class="display-4" id="title-name"></h1>
+                            </div>
+                            <div class="col-12">
+                                <p class="lead" id="plot"></p>
+                            </div>
+                            <div class="col-12">
+                                <ul class="list-unstyled" id="credits">
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
     </body>
