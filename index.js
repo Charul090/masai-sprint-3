@@ -49,11 +49,6 @@ function displayInfo(array){
     image.setAttribute("src",obj["Poster"]);
     image.classList.add("img-fluid","img-thumbnail");
 
-    image_div.append(image);
-    row.append(image_div);
-    link.append(row);
-    container.append(link);
-
     //content 
     var content=document.createElement("div");
     content.classList.add("col-6","offset-2");
@@ -64,8 +59,41 @@ function displayInfo(array){
     title.textContent=obj["Title"];
     content.append(title);
 
-    //type and year cards
-    var type_card=document.createElement()
+    //type cards
+    var type_card=document.createElement("small");
+    type_card.classList.add("p-1","text-white");
+    var type = obj["Type"];
+    console.log(type)
+
+    if(type === "movie"){
+        type_card.textContent="Movie";
+        type_card.classList.add("bg-success");
+    }
+    else{
+        type_card.textContent="Series";
+        type_card.classList.add("bg-warning");
+    }
+
+    content.append(type_card);
+
+    //Year Cards
+
+    var year_card=document.createElement("small");
+    year_card.classList.add("p-1","text-white","bg-danger");
+    year_card.textContent=obj["Year"];
+
+    content.append(year_card);
+
+    //Append all columns of a movie into row 
+    image_div.append(image);
+    row.append(image_div,content);
+
+    //Append row into link-group
+    link.append(row);
+    container.append(link);
+
+    
+
 
 
 }
