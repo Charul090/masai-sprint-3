@@ -18,7 +18,7 @@ function getInfoApi(movie,displayInfo,page){
     params.set("s",movie);
     params.set("page",page);
     url.search=params.toString()
-
+    console.log(url.href)
     xhr.open("GET",url.href);
     xhr.send();
     xhr.onload=function(){
@@ -31,7 +31,7 @@ function getInfoApi(movie,displayInfo,page){
 
 function displayInfo(array){
     var container=document.querySelector("#movie-results");
-    //container.innerHTML="";
+    container.innerHTML="";
     for(var i=0;i<array.length;i++){
 
         var obj=array[i];
