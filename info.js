@@ -19,7 +19,6 @@ function getMovieInfo(id,callback1,callback2){
     xhr.send();
     xhr.onload=function(){
         var obj=JSON.parse(this.response);
-        console.log(obj)
         callback1(obj);
         callback2(obj);
     }

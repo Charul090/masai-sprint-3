@@ -18,7 +18,6 @@ function getInfoApi(movie,displayInfo,page){
     params.set("s",movie);
     params.set("page",page);
     url.search=params.toString()
-    console.log(url.href)
     xhr.open("GET",url.href);
     xhr.send();
     xhr.onload=function(){
