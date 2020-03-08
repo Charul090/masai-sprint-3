@@ -50,3 +50,26 @@ header{
 #credits{
     font-family: 'Open Sans', sans-serif;
 }
+
+@media only screen and (max-width: 600px) {
+    #title0,
+    #title1,
+    #title2,
+    #title3,
+    #title4,
+    #title5,
+    #title6,
+    #title7,
+    #title8,
+    #title9{
+        font-size: 30px;
+    }
+
+    #search_display button{
+        font-size: 9px;
+    }
+
+    #search_display small{
+        font-size: 8px;
+    }
+}

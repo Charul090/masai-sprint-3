@@ -68,6 +68,7 @@ function displayInfo(array){
         //title of movie
         var title_div=document.createElement("div");
         var title=document.createElement("h1");
+        title.setAttribute("id","title"+i);
         title.classList.add("display-4");
         title.textContent=obj["Title"];
         title_div.append(id_display,title);
